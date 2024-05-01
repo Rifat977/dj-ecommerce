@@ -31,6 +31,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+
+    'django_otp',
+    'django_otp.plugins.otp_totp',
+    'django_otp.plugins.otp_static',
+
     'store',
 ]
 
@@ -39,12 +44,29 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django_otp.middleware.OTPMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'jewelryshop.middleware.CountryAccessMiddleware',
+    'jewelryshop.middleware.IPDomainFilterMiddleware',
 ]
 
+
+# prevent malicious ip or domain
+MALICIOUS_IPS = ['1.2.3.4', '5.6.7.8']
+MALICIOUS_DOMAINS = ['malicious.com', 'evil.org']
+
+
 ROOT_URLCONF = 'jewelryshop.urls'
+
+# logout after 5 minutes
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_AGE = 5 * 60
 
 TEMPLATES = [
     {
@@ -127,4 +149,40 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587 #465
+EMAIL_HOST_USER = 'itscrifat5147@gmail.com'
+EMAIL_HOST_PASSWORD = 'eoxs yjvt axuj zzgo'
+EMAIL_USE_TLS = True
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.getcwd() + '/log/logfile.log',
+            'filters': ['security'],
+        },
+    },
+    'filters': {
+        'security': {
+            '()': 'django.utils.log.CallbackFilter',
+            'callback': lambda record: record.levelname in ['CRITICAL', 'ERROR', 'WARNING'],  # Customize as needed
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
+

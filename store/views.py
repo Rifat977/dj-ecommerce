@@ -10,12 +10,25 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator # for Class Based Views
 from django.db.models import Count
 from django.http import HttpResponse, JsonResponse
-import json
+import json, os
+
+from django.contrib.auth import login as auth_login, authenticate
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+from django.urls import reverse_lazy
+from .forms import LoginForm
+from django_ratelimit.decorators import ratelimit
+
+from django.core.management.base import BaseCommand
+from django.core.mail import EmailMessage
+
 
 # Create your views here.
 
 def home(request):
-    messages.success(request, "New Address Added Successfully.")
+    messages.success(request, '')
     cat_product_count = []
     categories = Category.objects.filter(is_active=True, is_featured=True)[:6]
     for cat in categories:
@@ -76,6 +89,38 @@ class RegistrationView(View):
             messages.success(request, "Congratulations! Registration Successful!")
             form.save()
         return render(request, 'account/register.html', {'form': form})
+
+
+
+@ratelimit(key='ip', rate='5/m', method='POST', block=True)
+def custom_login(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                auth_login(request, user)
+                subject = 'Login Notification'
+                message = 'You have successfully logged in.'
+                sender_email = 'your@example.com'
+                recipient_list = [user.email]
+                send_mail(subject, message, sender_email, recipient_list)
+                messages.success(request, 'Login successful. Check your email for notification.')
+                return HttpResponseRedirect(reverse_lazy('store:home'))
+            else:
+                messages.error(request, 'Invalid username or password.')
+        else:
+            print("Form is invalid:", form.errors)
+            return render(request, 'account/login.html', {'form': form})
+    else:
+        form = LoginForm()
+    
+    return render(request, 'account/login.html', {'form': form})
+
+
+
         
 
 @login_required
@@ -250,3 +295,23 @@ def shop(request):
 
 def test(request):
     return render(request, 'store/test.html')
+
+
+@login_required
+def data_backup(request):
+    if request.user.is_superuser:
+        database_file = 'db.sqlite3'
+        if os.path.exists(database_file):
+            email = EmailMessage(
+                subject='Database Backup',
+                body='Attached is the backup of the database.',
+                to=[request.user.email],
+            )
+            email.attach_file(database_file)
+            email.send()   
+            print("Backup sent")
+        else:
+            print('Database not found')  
+        return redirect('store:home')   
+    else:
+        return redirect('store:home')

@@ -1,0 +1,5 @@
+Not Found: /home/
+"GET /home/ HTTP/1.1" 404 4755
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+"GET /static/eshop/img/favicon.ico HTTP/1.1" 404 1822

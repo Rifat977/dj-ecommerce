@@ -24,7 +24,7 @@ class RegistrationForm(UserCreationForm):
         widgets = {'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder':'Username'})}
 
 
-class LoginForm(AuthenticationForm):
+class LoginForm(forms.Form):
     username = UsernameField(widget=forms.TextInput(attrs={'autofocus': True, 'class': 'form-control'}))
     password = forms.CharField(label=_("Password"), strip=False, widget=forms.PasswordInput(attrs={'autocomplete':'current-password', 'class':'form-control'}))
 

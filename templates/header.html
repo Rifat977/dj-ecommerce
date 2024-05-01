@@ -74,7 +74,10 @@
                                 <a href="{% url 'store:profile' %}" class="dropdown-item">Profile</a>
                                 <a href="{% url 'store:password-change' %}" class="dropdown-item">Change Password</a>
                                 <hr>
-                                <a href="{% url 'store:logout' %}" class="dropdown-item">Logout</a>
+                                <form action="{% url 'store:logout' %}" method="post">
+                                    {% csrf_token %}
+                                    <button type="submit" class="dropdown-item" style="background: none; border: none; cursor: pointer;">Logout</button>
+                                </form>
                             </div>
                         </div>
                         {% url 'store:cart' as url %}

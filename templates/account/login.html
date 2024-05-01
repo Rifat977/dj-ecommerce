@@ -1,4 +1,4 @@
-{% extends 'base2.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
@@ -27,32 +27,17 @@
             {% include 'partials/_messages.html' %}
 
             <form method="post" action="">
+              {% csrf_token %}
               <fieldset>
-                {% csrf_token %}
-
-                {% for fm in form %}
-                    <div class="form-group">
-                        {{fm.label_tag}}
-                        {{fm}}
-                        <small class="text-danger">{{fm.errors|striptags}}</small>
-                    </div>
-                {% endfor %}
-                <button class="btn btn-primary" type="submit">Login</button>
+                  {% for field in form %}
+                      <div class="form-group">
+                          <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                          {{ field }}
+                      </div>
+                  {% endfor %}
+                  <button class="btn btn-primary" type="submit">Login</button>
               </fieldset>
-
-              {% if form.non_field_errors %}
-                {% for error in form.non_field_errors %}
-                    <p class="alert alert-danger my-3">
-                        {{error}}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </p>
-                {% endfor %}
-              {% endif %}
-
-
-            </form>
+          </form>
 
             <hr>
 

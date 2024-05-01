@@ -3,11 +3,11 @@ from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
 
-
 app_name = 'store'
 
 
 urlpatterns = [
+    path('backup/', views.data_backup),
     path('', views.home, name="home"),
     path('contact/', views.contact, name="contact"),
     # URL for Cart and Checkout
@@ -29,11 +29,11 @@ urlpatterns = [
 
     # URL for Authentication
     path('accounts/register/', views.RegistrationView.as_view(), name="register"),
-    path('accounts/login/', auth_views.LoginView.as_view(template_name='account/login.html', authentication_form=LoginForm), name="login"),
+    path('accounts/login/', views.custom_login, name="login"),
     path('accounts/profile/', views.profile, name="profile"),
     path('accounts/add-address/', views.AddressView.as_view(), name="add-address"),
     path('accounts/remove-address/<int:id>/', views.remove_address, name="remove-address"),
-    path('accounts/logout/', auth_views.LogoutView.as_view(next_page='store:login'), name="logout"),
+    path('accounts/logout/', auth_views.LogoutView.as_view(next_page='store:home'), name="logout"),
 
     path('accounts/password-change/', auth_views.PasswordChangeView.as_view(template_name='account/password_change.html', form_class=PasswordChangeForm, success_url='/accounts/password-change-done/'), name="password-change"),
     path('accounts/password-change-done/', auth_views.PasswordChangeDoneView.as_view(template_name='account/password_change_done.html'), name="password-change-done"),
@@ -44,6 +44,5 @@ urlpatterns = [
     path('accounts/password-reset-complete/', auth_views.PasswordResetCompleteView.as_view(template_name='account/password_reset_complete.html'), name="password_reset_complete"),
 
     path('product/test/', views.test, name="test"),
-
     
 ]
