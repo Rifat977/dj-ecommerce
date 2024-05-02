@@ -3,3 +3,50 @@ Not Found: /home/
 Not Found: /img/payments.png
 "GET /img/payments.png HTTP/1.1" 404 7447
 "GET /static/eshop/img/favicon.ico HTTP/1.1" 404 1822
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+"GET /static/eshop/img/favicon.ico HTTP/1.1" 404 1822
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+"GET /static/eshop/img/favicon.ico HTTP/1.1" 404 1822
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.

@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -55,6 +56,26 @@ MIDDLEWARE = [
     'jewelryshop.middleware.CountryAccessMiddleware',
     'jewelryshop.middleware.IPDomainFilterMiddleware',
 ]
+
+SECURITY_HEADERS = {
+    'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self';",
+    'X-Content-Type-Options': 'nosniff',
+    'X-Frame-Options': 'DENY',
+    'X-XSS-Protection': '1; mode=block',
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains', 
+    # You can add more headers as needed
+}
+
+#  security headers to response
+class SecurityHeadersMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        response = self.get_response(request)
+        for header, value in SECURITY_HEADERS.items():
+            response[header] = value
+        return response
 
 
 # prevent malicious ip or domain
@@ -67,6 +88,8 @@ ROOT_URLCONF = 'jewelryshop.urls'
 # logout after 5 minutes
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 SESSION_COOKIE_AGE = 5 * 60
+
+# SECURE_SSL_REDIRECT = True
 
 TEMPLATES = [
     {
