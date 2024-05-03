@@ -50,3 +50,357 @@ You're accessing the development server over HTTPS, but it only supports HTTP.
 You're accessing the development server over HTTPS, but it only supports HTTP.
 You're accessing the development server over HTTPS, but it only supports HTTP.
 You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+"GET /static/eshop/img/favicon.ico HTTP/1.1" 404 1822
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /categories/img/payments.png
+"GET /categories/img/payments.png HTTP/1.1" 404 7480
+Not Found: /categories/img/payments.png
+"GET /categories/img/payments.png HTTP/1.1" 404 7480
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 106091
+Not Found: /favicon.ico
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 106091
+Not Found: /favicon.ico
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 105915
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 105915
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /img/payments.png
+"GET /img/payments.png HTTP/1.1" 404 7447
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Not Found: /accounts/login/img/payments.png
+"GET /accounts/login/img/payments.png HTTP/1.1" 404 7492
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 106091
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 106091
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 106091
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 106091
+Not Found: /favicon.ico
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 259, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 228, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django_otp/admin.py", line 69, in has_permission
+    return super().has_permission(request) and request.user.is_verified()
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rifat/Projects/django/dj-ecommerce/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+"GET /admin/ HTTP/1.1" 500 105915

@@ -48,10 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.security.SecurityMiddleware',
 
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'jewelryshop.middleware.CountryAccessMiddleware',
     'jewelryshop.middleware.IPDomainFilterMiddleware',
@@ -178,8 +175,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587 #465
-EMAIL_HOST_USER = 'itscrifat5147@gmail.com'
-EMAIL_HOST_PASSWORD = 'eoxs yjvt axuj zzgo'
+EMAIL_HOST_USER = 'shossain201214@bscse.uiu.ac.bd'
+EMAIL_HOST_PASSWORD = 'lolsjvdpvbnexknv'
 EMAIL_USE_TLS = True
 
 
